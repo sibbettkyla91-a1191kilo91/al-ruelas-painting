@@ -10,14 +10,14 @@ Open `index.html` and search for `EDIT:` — every placeholder is marked.
 
 | What | Where |
 |---|---|
-| Phone number | Search `YOUR_PHONE` |
-| Email | Search `YOUR_EMAIL` |
+| Phone number | Search `(564)244-0106` |
+| Email | Search `Allenruelas93@gmail.com` |
 | Business address | Search `YOUR_ADDRESS` |
 | License / CCB # | Search `YOUR_LICENSE` |
 | Hours | Search `YOUR_HOURS` |
 | About paragraph | Search `EDIT: ABOUT` |
 | Reviews | Search `EDIT: REVIEW` |
-| Service towns | Search `EDIT: TOWNS` |
+| Service towns | Search `EDIT: Albany, OR` |
 | Photos | Replace files in `/images` |
 
 ## Photos
