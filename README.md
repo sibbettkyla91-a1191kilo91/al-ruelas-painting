@@ -1,52 +1,56 @@
-# Al Ruelas Painting — website template
+# Al's Painting
 
-A simple one-page website for a residential interior & exterior painting business in Albany, Oregon.
+Website for **Al Ruelas Painting** — residential interior and exterior painting in Albany, Oregon.
 
-Fill in the blanks, swap photos, and publish.
+Built with TanStack Start, React, and Tailwind CSS.
 
-## Quick edit list
+## Fill in your details
 
-Open `index.html` and search for `EDIT:` — every placeholder is marked.
+Open [`src/lib/site.ts`](src/lib/site.ts) and add:
 
-| What | Where |
-|---|---|
-| Phone number | Search `(564)244-0106` |
-| Email | Search `Allenruelas93@gmail.com` |
-| Business address | Search `YOUR_ADDRESS` |
-| License / CCB # | Search `YOUR_LICENSE` |
-| Hours | Search `YOUR_HOURS` |
-| About paragraph | Search `EDIT: ABOUT` |
-| Reviews | Search `EDIT: REVIEW` |
-| Service towns | Search `EDIT: Albany, OR` |
-| Photos | Replace files in `/images` |
+- Phone number
+- Email
+- Street address / ZIP
+- Hours
+- License number (if you want it on the site)
+- Nearby towns you serve
+- Estimate form endpoint (Formspree, Getform, or similar)
 
-## Photos
+Until those are filled in, the site hides empty contact fields instead of showing fake information.
 
-Replace these files with real job photos (keep the same filenames, or update the `src` in `index.html`):
+Replace the photos in `public/images/` with pictures of real jobs. Keep the same file names, or update the paths in `src/lib/site.ts`.
 
-- `images/hero-craftsman.jpg` — homepage banner
-- `images/interior-living.jpg`
-- `images/interior-bedroom.jpg`
-- `images/interior-kitchen.jpg`
-- `images/exterior-ranch.jpg`
-- `images/detail-trim.jpg`
+## Local preview
 
-## Contact form
+```bash
+npm install
+npm run dev
+```
 
-Two options:
+Then open the URL printed in the terminal.
 
-1. **Netlify Forms (easiest if hosted on Netlify)**  
-   The form already has `netlify` and `name="estimate"`. After the first deploy, submissions show up in the Netlify dashboard.
+```bash
+npm run build
+npm run preview
+```
 
-2. **Your own email**  
-   Change the form `action` to a service like Formspree, or hook it to your email later.
+## Pages
 
-Until then the form is in template mode and will not send mail.
+| Path | Page |
+| --- | --- |
+| `/` | Home |
+| `/services` | Services overview |
+| `/services/interior-painting` | Interior |
+| `/services/exterior-painting` | Exterior |
+| `/services/prep-and-repair` | Prep & repair |
+| `/services/trim-and-color` | Trim, doors & color |
+| `/work` | Project gallery |
+| `/about` | About |
+| `/contact` | Estimate request |
+| `/privacy` | Privacy |
 
-## Publish
+Estimate requests POST to `/api/estimate`. If `estimateEndpoint` is set in `src/lib/site.ts`, the server forwards the request there.
 
-- Drag the `al-ruelas-painting` folder onto [Netlify Drop](https://app.netlify.com/drop), or
-- Push this folder to GitHub and connect the repo to Netlify or Vercel, or
-- Use any static host.
+## Deploy
 
-Then point a domain like `alruelaspainting.com` at it when you are ready.
+Connect this repo to [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/). Build command is `npm run build`.

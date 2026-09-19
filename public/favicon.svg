@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-label="Al's Painting">
+  <rect width="16" height="16" rx="3.5" fill="#F4F0E8"/>
+  <polygon fill="#5A6B4A" points="8,2 9.2,2 5.2,14 3.4,14"/>
+  <polygon fill="#5A6B4A" points="8,2 6.8,2 10.8,14 12.6,14"/>
+  <rect x="4.6" y="8.9" width="6.8" height="1.5" rx="0.75" fill="#B85A3E"/>
+</svg>
